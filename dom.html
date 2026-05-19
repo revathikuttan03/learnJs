@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" name="" id="i1" ><button onclick="demo()">click</button>
+    <div id="d1">
+
+
+    </div>
+
+    <script>
+        let a = "hello world";
+        let b = "kiran";
+        document.getElementById("d1").innerHTML = `<p class="p1">${a}</p><p>${b}</p>`
+        function demo(){
+            
+
+            let c = document.getElementById('i1').value 
+            console.log(c)
+            document.getElementById("d1").innerHTML += `<p>${c}</p>`
+        }
+        
+
+    </script>
+    
+</body>
+</html>

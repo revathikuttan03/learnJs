@@ -12,6 +12,46 @@
         let a = false
         console.log(typeof(a))
 
+
+        // BigInt
+
+        let b = BigInt('4675759799770808080880')
+        console.log(typeof(b))
+
+        // symbol datatype
+        let c = Symbol("helo")
+        let d = Symbol('helo')
+        console.log(c==d)
+        // null
+        let e = null
+        console.log(typeof(e))
+
+
+        // object 
+
+        let f = {
+            name:"raju",
+            place:"tvm"
+        }
+        f.mark = 10
+        f.place = "thrissur"
+
+        delete f.name
+        console.log(f)
+
+
+        // array
+
+        let g = ['green','black','white','yellow']
+        // g.pop()
+        // g.unshift("red")
+        // g.shift()
+        g.push("pink")
+        g[1]="black1"
+
+        // console.log(g.slice(1,3))
+        console.log(g)
+        
     </script>
     
 </body>
