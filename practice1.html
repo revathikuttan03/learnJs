@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="mark"><button onclick="checkgrade()">check grade</button>
+    <p id="grade">result</p>
+
+    <script>
+        function checkgrade(){
+          let a = parseInt(document.getElementById("mark").value) 
+          if(a>100){
+                document.getElementById("grade").innerHTML = "invalid mark"
+                }
+         else if(a>90 && a<100){
+            document.getElementById("grade").innerHTML = "Grade A"
+          } 
+          else if(a>80 && a<90){
+            document.getElementById("grade").innerHTML = "Grade B"
+
+          }
+          else if(a>70 && a<80){
+            document.getElementById("grade").innerHTML = "Grade C"
+        }
+        else if(a>60 && a<70){
+            document.getElementById("grade").innerHTML = "Grade D"
+        }
+        else if(a>50 && a<60){
+            document.getElementById("grade").innerHTML = "Grade E"
+        }
+        else{
+             document.getElementById("grade").innerHTML = "Fail"
+        }
+       
+        }
+    </script>
+</body>
+</html>

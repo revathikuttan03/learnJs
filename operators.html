@@ -10,31 +10,49 @@
     <input type="text" name="" id="input1"><br>
     <input type="text" id="input2"><br>
     <button onclick="add()">+</button>
+    <button onclick="substract()">-</button>
+    <button onclick="multiple()">*</button>
     <p id="res">result is : </p>
     
 </body>
 
 <script>
     // - + / % * **
-    let a = 3
-    let b = 3
-    let c = a**b
-    console.log(c)
+    // let a = 3
+    // let b = 3
+    // let c = a**b
+    // console.log(c)
     // inrement / decrement 
 
-    let z = 10
-    z--
+    // let z = 10
+    // z--
     // z++
-console.log(z)
+// console.log(z)
 
 function add(){
     let num1= document.getElementById("input1").value
     num1 = parseInt(num1)
-    console.log(typeof(num1))
+    // console.log(typeof(num1))
     let num2= document.getElementById("input2").value
     num2 = parseInt(num2)
     document.getElementById("res").innerHTML =`result is : ${num1+num2}`
 }
+
+function multiple(){
+    let num1=document.getElementById("input1").value
+    num1 = parseInt(num1)
+    let num2 = document.getElementById("input2").value
+    num2 = parseInt(num2)
+    document.getElementById("res").innerHTML=`result is :${num1*num2}`
+}
+function substract(){
+    let num1=document.getElementById("input1").value
+    num1=parseInt(num1)
+    let num2=document.getElementById("input2").value
+    num2=parseInt(num2)
+    document.getElementById("res").innerHTML=`result is :${num1-num2}`
+}
+
 
 </script>
 </html>

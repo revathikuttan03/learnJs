@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>comparison operators </h1>
+
+    <input type="text" id="in1" ><button onclick="checkeAge()">check</button>
+    <p id="ans">result</p>
+
+    <script>
+        let a = 20
+        let b = 10
+        // let c = a == b
+        // let c = a !=b
+        // let c = a<=b
+        // let c = a>=b
+        // let c = a<b
+        let c = a>b
+        // console.log(c)
+
+
+        // let e = 10>5 && 10<=10 && 10==11
+
+        // let d = 11
+        // let e = d==10 || d< 5
+        // e = !e
+        // console.log("logical:", e)
+
+        function checkeAge(){
+        let age = document.getElementById("in1").value
+        age = parseInt(age)
+        let v = age >=20 && age <=30
+        document.getElementById("ans").innerHTML = v
+        console.log(age)
+        }
+        
+    </script>
+</body>
+</html>

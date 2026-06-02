@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* body{
+        background-color: #d51313;
+    } */
+</style>
+<body>
+    <input type="text" id="hello"><button onclick="message()">send</button>
+    <p id="message">receive</p>
+
+    <script>
+
+        // message = "hello"
+        // switch(message){
+        //     case "hello":
+        //         console.log("hi how are you!")
+        //         break;
+        //     case "hi":
+        //         console.log("hello")
+        //         break;
+
+        //     default:
+        //         console.log("invalid input")
+        // }
+        function message(){
+           let a= document.getElementById("hello").value 
+           switch(a){
+            case "hello":
+                document.getElementById("message").innerHTML = "hi how are you"
+                break;
+           }
+        }
+    </script>
+</body>
+</html>

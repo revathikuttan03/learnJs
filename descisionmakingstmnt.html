@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="mark" placeholder="enter your mark"><button onclick="checkmark()">check grade</button>
+    <p id="answer">result</p>
+    <script>
+        let mark = 60
+        function checkmark(){
+            let m =parseInt(document.getElementById("mark").value)
+
+            if(m>100){
+                document.getElementById("answer").innerHTML = "invalid mark"
+                }
+                else if(m>50){
+                    
+                    document.getElementById("answer").innerHTML = "pass"
+                }
+                else if(m>40){
+                document.getElementById("answer").innerHTML = "just pass"
+
+            }
+            else{
+                document.getElementById("answer").innerHTML = "fail"
+            }
+        }
+    </script>
+</body>
+</html>
