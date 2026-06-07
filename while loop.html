@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input type="text" id="multi"><button onclick="check()">check</button>
+<p id="table">ans</p>
+<body>
+    <script>
+    //    let x=10
+    //    let i=0
+    //     while(i<x){
+    //     console.log(i)
+    //     i++
+    // }
+    // function check(){
+    //     let a = document.getElementById("multi").value
+    //     let x =10;
+    //     let i=1;
+    //     while(i<=x){
+    //         document.getElementById("table").innerHTML = `<p>${i} x ${a} =${i*a}</p>`
+    //         i++
+    //     }
+    // }
+//     function check() {
+//     // 1. Get the value from the input box and convert it to a number
+//     let a = Number(document.getElementById("multi").value);
+//     let x = 10;
+//     let i = 1; // Starting from 1 instead of 0 makes more sense for a math table!
+    
+//     // 2. Clear the previous table before generating a new one
+//     document.getElementById("table").innerHTML = "";
+
+//     // 3. Loop through and append (+=) each row
+//     while (i <= x) {
+//         document.getElementById("table").innerHTML += `<p>${i} x ${a} = ${i * a}</p>`;
+//         i++;
+//     }
+// }
+
+function check() {
+    let a = document.getElementById("multi").value;
+    let i = 1;
+    let result = "";
+
+    while (i <= 10) {
+        result += `<p>${i} X ${a} = ${i * a}</p>`;
+        i++;
+    }
+
+    document.getElementById("table").innerHTML = result;
+}
+</script>
+    </script>
+</body>
+</html>
