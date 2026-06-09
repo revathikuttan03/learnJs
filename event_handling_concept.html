@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(55, 16, 195);
+    }
+    .div2{
+        height: 150px;
+        width: 150px;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div class="div1" id="d1"></div>
+    <input type="color" id="input1" >
+    <div class="div2" id="d2"></div>
+    
+    <script>
+        document.getElementById("input1").addEventListener("input",()=>{
+            let v= document.getElementById("input1").value
+             document.getElementById("d1").style.backgroundColor=v
+        })
+        document.getElementById("d2").addEventListener("dblclick",()=>{
+            document.getElementById("d2").style.backgroundColor = "green"
+        })
+        document.getElementById("d2").addEventListener("click",()=>{
+            document.getElementById("d2").style.backgroundColor = "black"
+        })
+        document.getElementById("d2").addEventListener("mouseover",()=>{
+            document.getElementById("d2").style.backgroundColor = "yellow"
+        })
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <input type="text" id="num1" >
+    <input type="text" id="num2"><button onclick="calculate()">add</button>
+    <p id="ans">answer</p>
+    <button onclick="cgcolor('blue')">blue</button>
+    <button onclick="cgcolor('green')">green</button>
+    <button ondblclick="cgcolor('yellow')" >yelow</button>
+    <button onmouseover="cgcolor('red')">red</button>
+</head>
+<body id="body">
+    
+    <script>
+        function add(a,b){
+            return(a-b)
+        }
+        function calculate() {
+        let num1 =document.getElementById("num1").value
+        num1 = parseInt(num1)
+        let num2 = document.getElementById("num2").value
+        num2 = parseInt(num2)
+        document.getElementById("ans").innerHTML = `result is :${add(num1,num2)}`
+        }
+       
+        function cgcolor(c){
+            document.getElementById("body").style.backgroundColor = c
+        }
+
+        const mul = (a,b)=>{
+            console.log(a*b)
+        }
+        mul(30,2)
+        mul(40,3)
+
+    </script>
+</body>
+</html>
