@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1{
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        margin: 10px;
+        /* transform: rotate(50deg); */
+        transition: transform 2s;
+         
+    }
+    .div2{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+}
+</style>
+<body>
+   <div class="div1" ></div> 
+   <div class="div1"></div> 
+   <p>hello</p>
+   <p>hi</p>
+   <div class="div2"></div>
+   <button id="bt1">click</button>
+   <script>
+    const d1=document.getElementsByClassName("div1")[0]
+    d1.addEventListener("mouseover",()=>{
+      d1.style.backgroundColor ="red"})
+    d1.addEventListener("mouseleave",()=>{
+       d1.style.backgroundColor ="black"})
+
+    let ptag = document.getElementsByTagName("p")
+        document.getElementsByClassName("div1")[1].addEventListener("click",()=>{
+            ptag[0].style = "color:red"
+            ptag[1].style = "color:red"
+        })
+
+
+        d1.addEventListener("click",()=>{
+            d1.style ="transform: rotate(50deg);"
+            
+        })
+
+
+        document.getElementsByClassName("div1")[1].addEventListener("mouseleave",()=>{
+        ptag[0].style = "color:black"
+        ptag[1].style = "color:black"
+       
+     })
+    
+     document.getElementById("bt1").addEventListener("click",()=>{
+        document.getElementsByClassName("div2")[0].style="width:400px"
+     })
+            
+    
+   </script>
+</body>
+</html>
