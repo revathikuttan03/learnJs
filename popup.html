@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="d1">click</button> 
+   <button id="d2">submit</button>
+   <p id="p1">result</p>
+   <button id="d3">send</button>
+   <p id="p2">prompt</p>
+
+
+   <script>
+    document.getElementById("d1").addEventListener("click",()=>{
+        alert("button click")
+    })
+    document.getElementById("d2").addEventListener("click",()=>{
+        if(confirm("pass or fail")){
+            document.getElementById("p1").innerHTML = "pass"
+        }
+        else {
+            document.getElementById("p1").innerHTML = "fail"
+        }
+
+    })
+    document.getElementById("d3").addEventListener("click",()=>{
+        let name =prompt("enter your name")
+        document.getElementById("p2").innerHTML = name
+
+    })
+
+   </script>
+</body>
+</html>
